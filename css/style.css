@@ -147,3 +147,15 @@ html {
     background-color: #006A4E;
     color: white;
 }
+
+@media (max-width: 400px) {
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  .newsletter>input, .newsletter>button {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
