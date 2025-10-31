@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide - Noorul Haram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">NH</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Noorul Haram</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-gold-600 transition">About</a>
+                    <a href="packages.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Packages</a>
+                    <a href="gallery.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Gallery</a>
+                    <a href="travel-guide.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Travel Guide</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Contact</a>
+                    <a href="packages.html" class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Book Now</a>
+                    <a href="#" class="bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700 transition">Admin Login</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 font-medium">About</a>
+                <a href="packages.html" class="block py-2 text-gray-700 font-medium">Packages</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 font-medium">Gallery</a>
+                <a href="travel-guide.html" class="block py-2 text-gray-700 font-medium">Travel Guide</a>
+                <a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact</a>
+                <a href="packages.html" class="block mt-2 bg-green-800 text-white px-4 py-2 rounded-lg text-center">Book Now</a>
+                <a href="#" class="block mt-2 bg-gold-600 text-white px-4 py-2 rounded-lg text-center">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Travel Guide</h1>
+            <p class="text-xl max-w-2xl mx-auto">Essential information and resources for your spiritual journey</p>
+        </div>
+    </section>
+
+    <!-- Guide Navigation -->
+    <section class="py-8 bg-gray-50 sticky top-0 z-40 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto space-x-4 pb-2">
+                <a href="#first-time-guide" class="whitespace-nowrap px-4 py-2 bg-white text-green-800 rounded-lg font-semibold hover:bg-green-800 hover:text-white transition">First-Time Guide</a>
+                <a href="#visa-requirements" class="whitespace-nowrap px-4 py-2 bg-white text-green-800 rounded-lg font-semibold hover:bg-green-800 hover:text-white transition">Visa Requirements</a>
+                <a href="#packing-checklist" class="whitespace-nowrap px-4 py-2 bg-white text-green-800 rounded-lg font-semibold hover:bg-green-800 hover:text-white transition">Packing Checklist</a>
+                <a href="#health-safety" class="whitespace-nowrap px-4 py-2 bg-white text-green-800 rounded-lg font-semibold hover:bg-green-800 hover:text-white transition">Health & Safety</a>
+                <a href="#duas-tips" class="whitespace-nowrap px-4 py-2 bg-white text-green-800 rounded-lg font-semibold hover:bg-green-800 hover:text-white transition">Duas & Tips</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Time Guide -->
+    <section id="first-time-guide" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">First-Time Pilgrim's Guide</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Step-by-Step Guide for First-Time Pilgrims</h3>
+                    
+                    <div class="space-y-8">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/4">
+                                <div class="w-16 h-16 bg-green-800 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h4 class="text-xl font-bold text-gray-800 mb-3">Preparation & Intention</h4>
+                                <p class="text-gray-600 mb-4">Begin with sincere intention (niyyah) for the journey. Settle debts, seek forgiveness, and make a will if necessary.</p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Make sincere repentance (tawbah)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Learn basic rituals and prayers</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Arrange your financial affairs</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/4">
+                                <div class="w-16 h-16 bg-green-800 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h4 class="text-xl font-bold text-gray-800 mb-3">Travel & Documentation</h4>
+                                <p class="text-gray-600 mb-4">Ensure all travel documents are in order and familiarize yourself with the journey ahead.</p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Valid passport with at least 6 months validity</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Hajj/Umrah visa properly filled</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Vaccination certificates (meningitis, COVID-19)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="md:w-1/4">
+                                <div class="w-16 h-16 bg-green-800 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                            </div>
+                            <div class="md:w-3/4">
+                                <h4 class="text-xl font-bold text-gray-800 mb-3">Entering State of Ihram</h4>
+                                <p class="text-gray-600 mb-4">The spiritual state of purity required for Hajj and Umrah.</p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Perform ghusl (ritual bath)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Wear prescribed Ihram clothing</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                        <span>Recite Talbiyah upon crossing miqat</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional steps would continue similarly -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Requirements -->
+    <section id="visa-requirements" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Visa Requirements</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Documents Required for Hajj & Umrah Visa</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Essential Documents</h4>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-file-alt text-gold-600 mt-1 mr-3"></i>
+                                    <span>Original passport valid for at least 6 months</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-file-alt text-gold-600 mt-1 mr-3"></i>
+                                    <span>Two recent passport-size photographs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-file-alt text-gold-600 mt-1 mr-3"></i>
+                                    <span>Completed visa application form</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-file-alt text-gold-600 mt-1 mr-3"></i>
+                                    <span>Confirmed round-trip airline tickets</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Additional Requirements</h4>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-syringe text-gold-600 mt-1 mr-3"></i>
+                                    <span>Meningitis vaccination certificate</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-female text-gold-600 mt-1 mr-3"></i>
+                                    <span>For women: Mahram proof (if applicable)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-hotel text-gold-600 mt-1 mr-3"></i>
+                                    <span>Confirmed hotel reservations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-money-bill text-gold-600 mt-1 mr-3"></i>
+                                    <span>Proof of financial means</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-green-50 rounded-lg border-l-4 border-green-800">
+                        <h4 class="font-bold text-green-800 mb-2">Important Note:</h4>
+                        <p class="text-green-700">Noorul Haram provides complete visa processing assistance for all our pilgrims. Our team handles all documentation and submission to ensure a smooth process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packing Checklist -->
+    <section id="packing-checklist" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Packing Checklist</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Essential Items for Your Journey</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Spiritual & Personal Items</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Ihram clothing (2 sets)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Prayer mat (lightweight)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Quran (pocket size)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Dua book/guide</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Tasbih (prayer beads)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Comfort & Health Items</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Comfortable walking shoes</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Umbrella or sun hat</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Basic first aid kit</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Prescription medications</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="w-5 h-5 text-green-600 rounded focus:ring-green-500">
+                                    <span class="ml-3 text-gray-600">Reusable water bottle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-yellow-800 mb-2">Packing Tip:</h4>
+                        <p class="text-yellow-700">Pack light! You'll be moving between locations and carrying your luggage. Focus on essentials and remember you can purchase many items in Saudi Arabia if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health & Safety -->
+    <section id="health-safety" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Health & Safety</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-syringe text-green-800 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Vaccinations</h3>
+                        <p class="text-gray-600 mb-4">Required and recommended vaccinations for pilgrims:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Meningitis (ACWY) - Mandatory</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>COVID-19 - As per current regulations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Influenza - Recommended</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Pneumonia - For elderly pilgrims</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-hand-holding-water text-green-800 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Hydration & Nutrition</h3>
+                        <p class="text-gray-600 mb-4">Essential tips to maintain your health during the journey:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Drink plenty of water (3-4 liters daily)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Carry electrolyte solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Eat light, balanced meals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                <span>Avoid excessive sun exposure</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Emergency Contacts</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <i class="fas fa-phone-alt text-gold-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">Noorul Haram Support</h4>
+                            <p class="text-gray-600">+966 55 123 4567</p>
+                        </div>
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <i class="fas fa-ambulance text-red-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">Emergency Services</h4>
+                            <p class="text-gray-600">997</p>
+                        </div>
+                        <div class="text-center p-4 border border-gray-200 rounded-lg">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">Indian Embassy</h4>
+                            <p class="text-gray-600">+966 12 662 5700</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Duas & Tips -->
+    <section id="duas-tips" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Duas & Spiritual Tips</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Essential Duas for Your Journey</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-green-800 mb-3">Dua for Travel</h4>
+                            <p class="text-gray-700 arabic-text text-right mb-3" style="font-size: 1.5rem; line-height: 2;">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ</p>
+                            <p class="text-gray-600">"Subhan-alladhi sakh-khara la-na ha-tha wa ma kun-na la-hu muqrinin"</p>
+                            <p class="text-gray-600 mt-2">"Glory to Him Who has brought this under our control, though we were unable to control it"</p>
+                        </div>
+                        
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-green-800 mb-3">Talbiyah</h4>
+                            <p class="text-gray-700 arabic-text text-right mb-3" style="font-size: 1.5rem; line-height: 2;">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ لَا شَرِيكَ لَكَ</p>
+                            <p class="text-gray-600">"Labbaik Allahumma Labbaik, Labbaik la sharika laka Labbaik, Innal hamda wan-ni'mata laka wal mulk, la sharika lak"</p>
+                            <p class="text-gray-600 mt-2">"Here I am, O Allah, here I am. Here I am, You have no partner, here I am. Verily all praise and blessings are Yours, and all sovereignty, You have no partner."</p>
+                        </div>
+
+                        <!-- Additional Duas added -->
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-green-800 mb-3">Dua for Protection During Travel</h4>
+                            <p class="text-gray-700 arabic-text text-right mb-3" style="font-size: 1.4rem; line-height: 2;">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعَثَاءِ السَّفَرِ وَكآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ</p>
+                            <p class="text-gray-600">"Allahumma inni a'udhu bika min wa'tha'is-safar wa kaabatil-manzar wa su'il-munqalab"</p>
+                            <p class="text-gray-600 mt-2">"O Allah, I seek refuge in You from the hardships of travel, from a change of heart and a bad outcome, and from an ill fate concerning wealth, family and affairs."</p>
+                        </div>
+
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-green-800 mb-3">Dua for Ease & Safety</h4>
+                            <p class="text-gray-700 arabic-text text-right mb-3" style="font-size: 1.4rem; line-height: 2;">اللَّهُمَّ اجْعَلْ سَفَرِي هَذَا رُخْصَةً وَسَلاَمَةً</p>
+                            <p class="text-gray-600">"Allahumma ij'al safari hadha rukh-satan wa salamatan"</p>
+                            <p class="text-gray-600 mt-2">"O Allah, make this journey a means of ease and safety for me."</p>
+                        </div>
+
+                        <div class="p-6 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-green-800 mb-3">Dua for Forgiveness & Acceptance</h4>
+                            <p class="text-gray-700 arabic-text text-right mb-3" style="font-size: 1.4rem; line-height: 2;">رَبِّ اغْفِرْ لِي وَارْحَمْنِي وَتَبَّ عَلَيَّ إِنَّكَ أَنتَ التَّوَّابُ الرَّحِيمُ</p>
+                            <p class="text-gray-600">"Rabbi ighfir li warhamni wa tabba 'alayya innaka anta at-Tawwab ar-Rahim"</p>
+                            <p class="text-gray-600 mt-2">"My Lord, forgive me, have mercy on me and accept my repentance; indeed You are the Oft-Returning, Most Merciful."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gold-50 rounded-lg border-l-4 border-gold-600">
+                        <h4 class="font-bold text-gold-800 mb-2">Spiritual Tips:</h4>
+                        <ul class="text-gold-700 space-y-2">
+                            <li>Maintain patience and good character throughout your journey</li>
+                            <li>Focus on your spiritual connection rather than material comforts</li>
+                            <li>Help fellow pilgrims and be considerate in crowded spaces</li>
+                            <li>Make sincere dua at every sacred site you visit</li>
+                            <li>Remember that the journey is about spiritual purification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">NH</span>
+                        </div>
+                        <span class="text-xl font-bold">Noorul Haram</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted partner for spiritual journeys to the holy lands of Makkah and Madinah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="packages.html" class="text-gray-300 hover:text-white transition">Packages</a></li>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition">Gallery</a></li>
+                        <li><a href="travel-guide.html" class="text-gray-300 hover:text-white transition">Travel Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-600"></i>
+                            <span>Main Chowk, Srinagar, Kashmir 190001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-gold-600"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-600"></i>
+                            <span>info@noorulharam.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Monday - Friday: 9AM - 6PM</li>
+                        <li>Saturday: 9AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-300">
+                <p>&copy; <span id="current-year"></span> Noorul Haram. All rights reserved.</p>
+                <p class="mt-2 text-sm">
+                    <span class="text-gray-500">Developed by</span> 
+                    <a href="https://your-portfolio-url.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-gold-600 hover:text-gold-400 transition-colors duration-300 font-medium hover:underline transform hover:scale-105 inline-block">
+                        Irfan Manzoor
+                        <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

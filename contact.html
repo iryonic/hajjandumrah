@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Noorul Haram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">NH</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Noorul Haram</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-gold-600 transition">About</a>
+                    <a href="packages.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Packages</a>
+                    <a href="gallery.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Gallery</a>
+                    <a href="travel-guide.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Travel Guide</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Contact</a>
+                    <a href="packages.html" class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Book Now</a>
+                    <a href="#" class="bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700 transition">Admin Login</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 font-medium">About</a>
+                <a href="packages.html" class="block py-2 text-gray-700 font-medium">Packages</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 font-medium">Gallery</a>
+                <a href="travel-guide.html" class="block py-2 text-gray-700 font-medium">Travel Guide</a>
+                <a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact</a>
+                <a href="packages.html" class="block mt-2 bg-green-800 text-white px-4 py-2 rounded-lg text-center">Book Now</a>
+                <a href="#" class="block mt-2 bg-gold-600 text-white px-4 py-2 rounded-lg text-center">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl max-w-2xl mx-auto">Get in touch with us for any questions about your spiritual journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject *</label>
+                            <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent">
+                                <option value="">Select a subject</option>
+                                <option value="hajj-inquiry">Hajj Package Inquiry</option>
+                                <option value="umrah-inquiry">Umrah Package Inquiry</option>
+                                <option value="ramadan-inquiry">Ramadan Package Inquiry</option>
+                                <option value="custom-package">Custom Package Request</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-600 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-800 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Get In Touch</h2>
+                    
+                    <div class="space-y-8">
+                        <!-- Office Address -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-green-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Office Address</h3>
+                                <p class="text-gray-600">Main Chowk, Srinagar<br>Kashmir 190001, India</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone Numbers -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-green-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Phone Numbers</h3>
+                                <p class="text-gray-600 mb-1">+91 123 456 7890</p>
+                                <p class="text-gray-600">+91 987 654 3210</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-green-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Email Address</h3>
+                                <p class="text-gray-600 mb-1">info@noorulharam.com</p>
+                                <p class="text-gray-600">bookings@noorulharam.com</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Office Hours -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-green-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Office Hours</h3>
+                                <p class="text-gray-600 mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p class="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
+                                <p class="text-gray-600">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp Button -->
+                    <div class="mt-8 p-6 bg-green-50 rounded-lg border border-green-200">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">Instant WhatsApp Support</h3>
+                        <p class="text-gray-600 mb-4">Get quick answers to your questions through WhatsApp. Our team is available during office hours.</p>
+                        <a href="https://wa.me/911234567890" target="_blank" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            <i class="fab fa-whatsapp text-white mr-3 text-xl"></i>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Visit Our Office</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Come visit us at our office in Srinagar to discuss your spiritual journey in person</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Embedded Google Map -->
+                <div class="h-96 w-full bg-gray-200 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-map-marker-alt text-gold-600 text-4xl mb-4"></i>
+                        <p class="text-gray-600">Map would be embedded here</p>
+                        <p class="text-gray-500 text-sm mt-2">Main Chowk, Srinagar, Kashmir 190001</p>
+                    </div>
+                    <!-- In a real implementation, you would embed Google Maps here -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                </div>
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Getting Here</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">By Air</h4>
+                            <p class="text-gray-600">20 minutes from Srinagar International Airport</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">By Road</h4>
+                            <p class="text-gray-600">Located in city center, accessible by all major routes</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-2">Parking</h4>
+                            <p class="text-gray-600">Ample parking available in the building premises</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Frequently Asked Questions</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="faq-question w-full text-left p-6 font-semibold text-gray-800 hover:bg-green-800 hover:text-white transition flex justify-between items-center">
+                            <span>How far in advance should I book my Hajj or Umrah package?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer p-6 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">We recommend booking at least 3-4 months in advance for Umrah and 6-8 months in advance for Hajj. This allows sufficient time for visa processing, flight arrangements, and accommodation bookings, especially during peak seasons.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="faq-question w-full text-left p-6 font-semibold text-gray-800 hover:bg-green-800 hover:text-white transition flex justify-between items-center">
+                            <span>What documents are required for Hajj and Umrah visas?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer p-6 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">Required documents include a valid passport (with at least 6 months validity), recent passport-sized photographs, completed visa application form, confirmed flight tickets, vaccination certificates (meningitis is mandatory), and for women traveling without a mahram, additional documentation may be required. Our team provides complete assistance with the visa process.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="faq-question w-full text-left p-6 font-semibold text-gray-800 hover:bg-green-800 hover:text-white transition flex justify-between items-center">
+                            <span>Do you provide group discounts?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer p-6 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">Yes, we offer special group discounts for families and groups of 5 or more people. The discount varies based on group size and package selection. Contact us with your group details for a customized quote.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="faq-question w-full text-left p-6 font-semibold text-gray-800 hover:bg-green-800 hover:text-white transition flex justify-between items-center">
+                            <span>What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer p-6 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">Our cancellation policy varies based on how close to the departure date the cancellation occurs. Generally, cancellations made 60+ days before departure receive a full refund minus administrative fees. As the departure date approaches, cancellation charges increase. We recommend reviewing the specific terms in your booking agreement and considering travel insurance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <p class="text-gray-600">Have more questions? <a href="#contact-form" class="text-green-800 font-semibold hover:underline">Contact us directly</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">NH</span>
+                        </div>
+                        <span class="text-xl font-bold">Noorul Haram</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for spiritual journeys to the holy lands of Makkah and Madinah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white transition">Packages</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="travel-guide.html" class="text-gray-400 hover:text-white transition">Travel Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-600"></i>
+                            <span>Main Chowk, Srinagar, Kashmir 190001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-gold-600"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-600"></i>
+                            <span>info@noorulharam.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Monday - Friday: 9AM - 6PM</li>
+                        <li>Saturday: 9AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; <span id="current-year"></span> Noorul Haram. All rights reserved.</p>
+                <p class="mt-2 text-sm">
+                    <span class="text-gray-500">Developed by</span> 
+                    <a href="https://your-portfolio-url.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-gold-600 hover:text-gold-400 transition-colors duration-300 font-medium hover:underline transform hover:scale-105 inline-block">
+                        Irfan Manzoor
+                        <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6006801960" target="_blank" class="fixed bottom-6 left-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 z-40">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

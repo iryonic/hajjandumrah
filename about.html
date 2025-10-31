@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Noorul Haram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins">
+    <!-- Navigation (same as index.html) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">NH</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Noorul Haram</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Home</a>
+                    <a href="about.html" class="text-green-800 font-medium hover:text-gold-600 transition">About</a>
+                    <a href="packages.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Packages</a>
+                    <a href="gallery.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Gallery</a>
+                    <a href="travel-guide.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Travel Guide</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Contact</a>
+                    <a href="packages.html" class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Book Now</a>
+                    <a href="#" class="bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700 transition">Admin Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-green-800 font-medium">About</a>
+                <a href="packages.html" class="block py-2 text-gray-700 font-medium">Packages</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 font-medium">Gallery</a>
+                <a href="travel-guide.html" class="block py-2 text-gray-700 font-medium">Travel Guide</a>
+                <a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact</a>
+                <a href="packages.html" class="block mt-2 bg-green-800 text-white px-4 py-2 rounded-lg text-center">Book Now</a>
+                <a href="#" class="block mt-2 bg-gold-600 text-white px-4 py-2 rounded-lg text-center">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Noorul Haram</h1>
+            <p class="text-xl max-w-2xl mx-auto">Discover our story, mission, and the dedicated team behind your spiritual journeys</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4">Founded in 2010 in the heart of Kashmir, Noorul Haram began with a simple yet profound vision: to help fellow Muslims fulfill their spiritual obligations of Hajj and Umrah with ease, comfort, and devotion.</p>
+                    <p class="text-gray-600 mb-4">What started as a small travel agency has grown into a trusted name in pilgrimage travel, serving thousands of pilgrims from across Jammu & Kashmir and beyond.</p>
+                    <p class="text-gray-600 mb-6">Our journey has been guided by the principles of integrity, compassion, and excellence in service. We understand that a pilgrimage is not just a journey, but a once-in-a-lifetime spiritual experience that requires meticulous planning and heartfelt care.</p>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                        <p class="text-gray-700 italic">"Our mission is to make your spiritual journey as smooth and meaningful as possible, so you can focus entirely on your devotion and connection with Allah."</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="images/bg.jpg" alt="Our Story" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision & Values -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Our Guiding Principles</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-green-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">To provide exceptional Hajj and Umrah services that combine comfort, spiritual guidance, and authentic cultural experiences, making each pilgrimage a truly transformative journey.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-green-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600">To become the most trusted and respected Hajj and Umrah service provider, recognized for our commitment to excellence, integrity, and the spiritual well-being of every pilgrim.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-green-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Values</h3>
+                    <p class="text-gray-600">Integrity, Compassion, Excellence, Spirituality, and Community. These values guide every decision we make and every service we provide to our pilgrims.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Meet Our Founders</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">The visionary leaders who established Noorul Haram with a mission to serve the spiritual needs of the community</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                <!-- Founder 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('images/founder1.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Miss Shaista</h3>
+                        <p class="text-gold-600 font-semibold mb-4">Co-Founder & Director</p>
+                        <p class="text-gray-600 mb-4">With a background in hospitality and a deep commitment to serving the Muslim community, Miss Shaista brings warmth and meticulous attention to every pilgrimage journey.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-green-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-green-800"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Founder 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('images/founder2.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Mr. Umar</h3>
+                        <p class="text-gold-600 font-semibold mb-4">Co-Founder & Director</p>
+                        <p class="text-gray-600 mb-4">Mr. Umar's extensive experience in travel logistics and his passion for facilitating spiritual journeys makes him an invaluable leader in our organization.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-green-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-green-800"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (Optional) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Our Dedicated Team</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Meet the passionate individuals who work tirelessly to ensure your pilgrimage is seamless and spiritually fulfilling</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Ayesha Khan</h3>
+                        <p class="text-gold-600 text-sm mb-4">Travel Coordinator</p>
+                        <p class="text-gray-600 text-sm">With 5 years of experience, Ayesha ensures all travel arrangements are perfectly coordinated.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Bilal Ahmed</h3>
+                        <p class="text-gold-600 text-sm mb-4">Spiritual Guide</p>
+                        <p class="text-gray-600 text-sm">Bilal provides spiritual guidance and support throughout your pilgrimage journey.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Zainab Hassan</h3>
+                        <p class="text-gold-600 text-sm mb-4">Customer Relations</p>
+                        <p class="text-gray-600 text-sm">Zainab is your point of contact for any queries before, during, and after your journey.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Imran Shah</h3>
+                        <p class="text-gold-600 text-sm mb-4">Logistics Manager</p>
+                        <p class="text-gray-600 text-sm">Imran oversees all logistical aspects to ensure a smooth and hassle-free pilgrimage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for Your Spiritual Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Let us help you fulfill your dream of performing Hajj or Umrah with comfort and peace of mind.</p>
+            <a href="packages.html" class="inline-block bg-gold-600 hover:bg-gold-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 mr-4">View Packages</a>
+            <a href="contact.html" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-green-800 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">NH</span>
+                        </div>
+                        <span class="text-xl font-bold">Noorul Haram</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for spiritual journeys to the holy lands of Makkah and Madinah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white transition">Packages</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="travel-guide.html" class="text-gray-400 hover:text-white transition">Travel Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-600"></i>
+                            <span>Main Chowk, Srinagar, Kashmir 190001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-gold-600"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-600"></i>
+                            <span>info@noorulharam.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Monday - Friday: 9AM - 6PM</li>
+                        <li>Saturday: 9AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; <span id="current-year"></span> Noorul Haram. All rights reserved.</p>
+                <p class="mt-2 text-sm">
+                    <span class="text-gray-500">Developed by</span> 
+                    <a href="https://your-portfolio-url.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-gold-600 hover:text-gold-400 transition-colors duration-300 font-medium hover:underline transform hover:scale-105 inline-block">
+                        Irfan Manzoor
+                        <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

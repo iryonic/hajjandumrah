@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noorul Haram - Your Trusted Partner for Hajj & Umrah Journeys</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">NH</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Noorul Haram</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-green-800 font-medium hover:text-gold-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-gold-600 transition">About</a>
+                    <a href="packages.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Packages</a>
+                    <a href="gallery.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Gallery</a>
+                    <a href="travel-guide.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Travel Guide</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Contact</a>
+                    <a href="packages.html" class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Book Now</a>
+                    <a href="#" class="bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700 transition">Admin Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-green-800 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 font-medium">About</a>
+                <a href="packages.html" class="block py-2 text-gray-700 font-medium">Packages</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 font-medium">Gallery</a>
+                <a href="travel-guide.html" class="block py-2 text-gray-700 font-medium">Travel Guide</a>
+                <a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact</a>
+                <a href="packages.html" class="block mt-2 bg-green-800 text-white px-4 py-2 rounded-lg text-center">Book Now</a>
+                <a href="#" class="block mt-2 bg-gold-600 text-white px-4 py-2 rounded-lg text-center">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-32 md:pt-32 md:pb-48 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bg.jpg');">
+        <div class="container mx-auto px-4 py-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Trusted Partner for Hajj & Umrah Journeys</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Experience spiritual journeys with comfort, care, and devotion from the heart of Kashmir</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="packages.html" class="bg-gold-600 hover:bg-gold-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Explore Packages</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-green-800 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">About Noorul Haram</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="images/bg.jpg" alt="Makkah" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Serving Pilgrims with Devotion Since 2010</h3>
+                    <p class="text-gray-600 mb-6">Noorul Haram is a premier Hajj and Umrah travel company based in the beautiful valley of Kashmir. With over a decade of experience, we have helped thousands of pilgrims fulfill their spiritual dreams with comfort, care, and devotion.</p>
+                    <p class="text-gray-600 mb-6">Our team of dedicated professionals understands the spiritual significance of these journeys and works tirelessly to ensure every aspect of your pilgrimage is handled with the utmost care and respect.</p>
+                    <a href="about.html" class="inline-block bg-green-800 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Featured Packages</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Choose from our carefully curated packages designed to provide comfort and spiritual fulfillment</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Premium Hajj Package</h3>
+                            <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">15 Days</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Experience Hajj with premium accommodations close to Haram, guided by experienced scholars.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gold-600">₹4,50,000</span>
+                            <a href="package-details.html" class="text-green-800 font-semibold hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Deluxe Umrah Package</h3>
+                            <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">10 Days</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A spiritually enriching Umrah journey with 5-star hotels and comprehensive guidance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gold-600">₹1,20,000</span>
+                            <a href="package-details.html" class="text-green-800 font-semibold hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/bg.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Ramadan Umrah Special</h3>
+                            <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">14 Days</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Perform Umrah in the blessed month of Ramadan with special arrangements for Iftar and Taraweeh.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gold-600">₹1,80,000</span>
+                            <a href="package-details.html" class="text-green-800 font-semibold hover:underline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="packages.html" class="inline-block bg-gold-600 hover:bg-gold-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">What Our Pilgrims Say</h2>
+                <div class="w-20 h-1 bg-gold-600 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div id="testimonials-carousel" class="relative overflow-hidden">
+                    <div class="testimonial-slides flex transition-transform duration-500">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide min-w-full p-6">
+                            <div class="bg-white rounded-xl shadow-lg p-8">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                        <img src="images/bg.jpg" alt="Ahmed Khan" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Ahmed Khan</h4>
+                                        <p class="text-gray-600">Srinagar, Kashmir</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 italic">"My Hajj journey with Noorul Haram was beyond expectations. Their attention to detail and spiritual guidance made this pilgrimage truly memorable. May Allah reward them for their sincere efforts."</p>
+                                <div class="flex text-gold-600 mt-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide min-w-full p-6">
+                            <div class="bg-white rounded-xl shadow-lg p-8">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                        <img src="images/bg.jpg" alt="Fatima Bhat" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Fatima Bhat</h4>
+                                        <p class="text-gray-600">Anantnag, Kashmir</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 italic">"I traveled for Umrah with my elderly parents, and Noorul Haram took exceptional care of us. The hotels were close to Haram, and the staff was always available to assist. Highly recommended!"</p>
+                                <div class="flex text-gold-600 mt-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide min-w-full p-6">
+                            <div class="bg-white rounded-xl shadow-lg p-8">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                        <img src="images/bg.jpg" alt="Mohammad Yusuf" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Mohammad Yusuf</h4>
+                                        <p class="text-gray-600">Baramulla, Kashmir</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 italic">"The Ramadan Umrah package was exceptional. Arrangements for Iftar and Taraweeh prayers were seamless. The spiritual atmosphere created by the guides enhanced our experience tremendously."</p>
+                                <div class="flex text-gold-600 mt-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <button id="testimonial-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 shadow-lg flex items-center justify-center text-green-800 hover:bg-gray-100">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="testimonial-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-10 h-10 shadow-lg flex items-center justify-center text-green-800 hover:bg-gray-100">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- Indicators -->
+                    <div class="flex justify-center mt-6 space-x-2">
+                        <button class="testimonial-indicator w-3 h-3 rounded-full bg-gray-300"></button>
+                        <button class="testimonial-indicator w-3 h-3 rounded-full bg-gray-300"></button>
+                        <button class="testimonial-indicator w-3 h-3 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for updates on special packages, travel advisories, and spiritual insights.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+                <button type="submit" class="bg-gold-600 hover:bg-gold-700 px-6 py-3 rounded-r-lg font-semibold transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">NH</span>
+                        </div>
+                        <span class="text-xl font-bold">Noorul Haram</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for spiritual journeys to the holy lands of Makkah and Madinah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white transition">Packages</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="travel-guide.html" class="text-gray-400 hover:text-white transition">Travel Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-600"></i>
+                            <span>Main Chowk, Srinagar, Kashmir 190001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-gold-600"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-600"></i>
+                            <span>info@noorulharam.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Monday - Friday: 9AM - 6PM</li>
+                        <li>Saturday: 9AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; <span id="current-year"></span> Noorul Haram. All rights reserved.</p>
+                <p class="mt-2 text-sm">
+                    <span class="text-gray-500">Developed by</span> 
+                    <a href="https://your-portfolio-url.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-gold-600 hover:text-gold-400 transition-colors duration-300 font-medium hover:underline transform hover:scale-105 inline-block">
+                        Irfan Manzoor
+                        <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/testimonials.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Hajj Package - Noorul Haram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">NH</span>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Noorul Haram</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium hover:text-gold-600 transition">About</a>
+                    <a href="packages.html" class="text-green-800 font-medium hover:text-gold-600 transition">Packages</a>
+                    <a href="gallery.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Gallery</a>
+                    <a href="travel-guide.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Travel Guide</a>
+                    <a href="contact.html" class="text-gray-700 font-medium hover:text-gold-600 transition">Contact</a>
+                    <a href="packages.html" class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">Book Now</a>
+                    <a href="#" class="bg-gold-600 text-white px-4 py-2 rounded-lg hover:bg-gold-700 transition">Admin Login</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block py-2 text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 font-medium">About</a>
+                <a href="packages.html" class="block py-2 text-green-800 font-medium">Packages</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 font-medium">Gallery</a>
+                <a href="travel-guide.html" class="block py-2 text-gray-700 font-medium">Travel Guide</a>
+                <a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact</a>
+                <a href="packages.html" class="block mt-2 bg-green-800 text-white px-4 py-2 rounded-lg text-center">Book Now</a>
+                <a href="#" class="block mt-2 bg-gold-600 text-white px-4 py-2 rounded-lg text-center">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-green-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Premium Hajj Package</h1>
+                    <p class="text-xl">15 Days of Spiritual Journey with Premium Accommodations</p>
+                </div>
+                <div class="mt-6 md:mt-0 text-center md:text-right">
+                    <div class="text-3xl font-bold text-gold-600 mb-2">₹4,50,000</div>
+                    <p class="text-gray-300">per person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Details -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Main Content -->
+                <div class="lg:w-2/3">
+                    <!-- Image Gallery -->
+                    <div class="mb-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="md:col-span-2">
+                                <img src="images/bg.jpg" alt="Hajj Package" class="w-full h-64 md:h-80 object-cover rounded-lg">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <img src="images/bg.jpg" alt="Hajj Package" class="w-full h-32 object-cover rounded-lg">
+                                <img src="images/bg.jpg" alt="Hajj Package" class="w-full h-32 object-cover rounded-lg">
+                                <img src="images/bg.jpg" alt="Hajj Package" class="w-full h-32 object-cover rounded-lg">
+                                <img src="images/bg.jpg" alt="Hajj Package" class="w-full h-32 object-cover rounded-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Itinerary -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-green-800 mb-6">Day-by-Day Itinerary</h2>
+                        <div class="space-y-6">
+                            <!-- Day 1 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 1: Departure from Kashmir</h3>
+                                <p class="text-gray-600">Depart from Srinagar International Airport to Jeddah. Upon arrival, transfer to Madinah. Check into hotel and rest.</p>
+                            </div>
+                            
+                            <!-- Day 2-4 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 2-4: Spiritual Days in Madinah</h3>
+                                <p class="text-gray-600">Visit Masjid an-Nabawi, participate in prayers, and visit historical sites including Quba Mosque and Uhud Mountain.</p>
+                            </div>
+                            
+                            <!-- Day 5 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 5: Travel to Makkah</h3>
+                                <p class="text-gray-600">Travel to Makkah by luxury coach. Perform Umrah upon arrival with guidance from our scholars.</p>
+                            </div>
+                            
+                            <!-- Day 6-8 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 6-8: Hajj Rituals Begin</h3>
+                                <p class="text-gray-600">Enter state of Ihram, travel to Mina, then to Arafat for Wuquf. Stay overnight at Muzdalifah and proceed to Jamarat for Rami.</p>
+                            </div>
+                            
+                            <!-- Day 9-11 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 9-11: Tashreeq Days</h3>
+                                <p class="text-gray-600">Perform Tawaf al-Ifadah and Sa'ee. Stay in Mina for three days of Tashreeq, performing Rami each day.</p>
+                            </div>
+                            
+                            <!-- Day 12-14 -->
+                            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-600">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Day 12-14: Farewell Tawaf & Return</h3>
+                                <p class="text-gray-600">Perform farewell Tawaf. Free time for shopping and final prayers. Depart from Jeddah to Srinagar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hotels & Accommodations -->
+                    <div class="mb-12">
+                        <h2 class="text-3xl font-bold text-green-800 mb-6">Hotels & Accommodations</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Makkah Hotel</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-hotel text-gold-600 mr-3"></i>
+                                    <span>Swissotel Makkah (5-Star)</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-map-marker-alt text-gold-600 mr-3"></i>
+                                    <span>Direct access to Masjid al-Haram</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-bed text-gold-600 mr-3"></i>
+                                    <span>Luxury Room with Haram View</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-gray-800 mb-3">Madinah Hotel</h3>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-hotel text-gold-600 mr-3"></i>
+                                    <span>Millennium Taiba Hotel (5-Star)</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-map-marker-alt text-gold-600 mr-3"></i>
+                                    <span>5-minute walk to Masjid an-Nabawi</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 mb-2">
+                                    <i class="fas fa-bed text-gold-600 mr-3"></i>
+                                    <span>Deluxe Room with City View</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h2 class="text-2xl font-bold text-green-800 mb-4">What's Included</h2>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>Return flights from Srinagar to Jeddah</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>5-star hotel accommodations in Makkah & Madinah</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>All ground transportation in Saudi Arabia</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>Daily breakfast and dinner</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>Experienced scholar guidance throughout</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>All Hajj permits and government fees</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                                    <span>Medical assistance and emergency support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h2 class="text-2xl font-bold text-green-800 mb-4">What's Not Included</h2>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-600 mt-1 mr-3"></i>
+                                    <span>Personal expenses and shopping</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-600 mt-1 mr-3"></i>
+                                    <span>Lunch meals (available at additional cost)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-600 mt-1 mr-3"></i>
+                                    <span>Visa fees (assistance provided)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-600 mt-1 mr-3"></i>
+                                    <span>Travel insurance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-times text-red-600 mt-1 mr-3"></i>
+                                    <span>Additional tours outside itinerary</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:w-1/3">
+                    <div class="sticky top-32 bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-green-800 mb-4">Book This Package</h3>
+                        
+                        <div class="mb-6">
+                            <div class="text-3xl font-bold text-gold-600 mb-2">₹4,50,000</div>
+                            <p class="text-gray-600">per person</p>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Duration</span>
+                                <span class="font-semibold">15 Days</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Group Size</span>
+                                <span class="font-semibold">Max 25 pilgrims</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Next Departure</span>
+                                <span class="font-semibold">June 15, 2024</span>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-green-800 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-4">
+                            Book Now
+                        </button>
+                        
+                        <button class="w-full bg-gold-600 hover:bg-gold-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            Download Brochure
+                        </button>
+                        
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <h4 class="font-semibold text-gray-800 mb-3">Need Help?</h4>
+                            <p class="text-gray-600 mb-4">Our travel experts are here to assist you with any questions.</p>
+                            <div class="flex items-center text-gray-600">
+                                <i class="fas fa-phone text-gold-600 mr-3"></i>
+                                <span>+91 123 456 7890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-green-800 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">NH</span>
+                        </div>
+                        <span class="text-xl font-bold">Noorul Haram</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for spiritual journeys to the holy lands of Makkah and Madinah.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white transition">Packages</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="travel-guide.html" class="text-gray-400 hover:text-white transition">Travel Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-600"></i>
+                            <span>Main Chowk, Srinagar, Kashmir 190001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-gold-600"></i>
+                            <span>+91 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-600"></i>
+                            <span>info@noorulharam.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Office Hours</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Monday - Friday: 9AM - 6PM</li>
+                        <li>Saturday: 9AM - 2PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; <span id="current-year"></span> Noorul Haram. All rights reserved.</p>
+                <p class="mt-2 text-sm">
+                    <span class="text-gray-500">Developed by</span> 
+                    <a href="https://your-portfolio-url.com" target="_blank" rel="noopener noreferrer" 
+                       class="text-gold-600 hover:text-gold-400 transition-colors duration-300 font-medium hover:underline transform hover:scale-105 inline-block">
+                        Irfan Manzoor
+                        <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-green-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
